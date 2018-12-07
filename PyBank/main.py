@@ -18,9 +18,6 @@ average = budget_column_difference.mean()
 maximum = budget_column_difference.max()
 minimum = budget_column_difference.min()    
 
-#max_increase_month = budget_column_difference.index(max(budget_column_difference)) + 1
-#max_decrease_month = budget_column_difference.index(min(budget_column_difference)) + 1
-
 average_change_print = "Average Change: " + "$" + str(average)
 greatest_increase_print = "Greatest Increase in Profits: " + "$" + str(maximum)
 greatest_decrease_print = "Greatest Decrease in Profits: " + "$" + str(minimum)
@@ -35,6 +32,7 @@ print (net_total_print)
 print (average_change_print)
 print (greatest_increase_print)
 print (greatest_decrease_print)
+
 
 total_file = Path("Financial_Analysis_Summary.txt")
 
